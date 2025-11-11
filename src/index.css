@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+  color: #000;
+  overflow-x: hidden;
+  background: #87ceeb;
+  padding: 0 3vw;
+
+  font-family: "Signika Negative", sans-serif;
+  font-optical-sizing: auto;
+}
