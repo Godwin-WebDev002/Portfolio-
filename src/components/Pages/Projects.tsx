@@ -4,6 +4,7 @@ import SugPro from "../assets/image/surgpro.png";
 import FoodPro from "../assets/image/foodpro.png";
 import Ovulan from "../assets/image/Ovulan.png";
 import Aurea from "../assets/image/Aurea.png";
+import Realest from "../assets/image/RealestP.png";
 
 export const Projects = () => {
   return (
@@ -14,6 +15,39 @@ export const Projects = () => {
       </div>
 
       <div className=" mt-8 font-semibold flex flex-wrap gap-8 justify-evenly ">
+        <motion.div
+          initial={{ opacity: 0, x: -10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className=" w-[100%] md:w-[45%]"
+        >
+          <img
+            src={Realest}
+            alt="Ovulan"
+            className="w-[100%] mb-1 rounded-xl transition-all duration-200 ease-in-out hover:scale-102 shadow shadow-[#868e96] "
+          />
+
+          <h1 className="text-xl font-semibold">Relest</h1>
+
+          <p className="text-xs">
+            A wonderful well crafted real estate website.
+          </p>
+
+          <div className="space-y-2">
+            <p className=" text-[#868e96] text-sm ">
+              #ReactJs #TypeScript #Tailwind #FramerMotion
+            </p>
+            <a
+              href={"https://osesrealest.netlify.app/"}
+              target="blank"
+              className=" flex justify-center items-center px-2 w-fit h-8 gap-2 rounded-xl border-2 border-[#868e96] hover:bg-white/20 "
+            >
+             Visit <CgArrowTopRight size={20} />
+            </a>
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -34,16 +68,16 @@ export const Projects = () => {
             carousels, detailed specs of different kind.
           </p>
 
-          <div className="flex justify-between gap-2">
+          <div className="space-y-2">
             <p className=" text-[#868e96] text-sm ">
               #ReactJs #TypeScript #Tailwind #FramerMotion
             </p>
             <a
               href={"https://ovulan.netlify.app/"}
               target="blank"
-              className=" flex justify-center items-center w-8 h-8 rounded-xl border-2 border-[#868e96] hover:bg-white/20 "
+              className=" flex justify-center items-center px-2 w-fit h-8 gap-2 rounded-xl border-2 border-[#868e96] hover:bg-white/20 "
             >
-              <CgArrowTopRight size={20} />
+              Visit <CgArrowTopRight size={20} />
             </a>
           </div>
         </motion.div>
@@ -68,16 +102,16 @@ export const Projects = () => {
             and a seamless checkout flow.
           </p>
 
-          <div className="flex justify-between gap-2">
+          <div className="space-y-2">
             <p className=" text-[#868e96] text-sm ">
               #ReactJs #TypeScript #Tailwind #FramerMotion
             </p>
             <a
               href={"https://aureas.netlify.app/"}
               target="blank"
-              className=" flex justify-center items-center w-8 h-8 rounded-xl border-2 border-[#868e96] hover:bg-white/20 "
+              className=" flex justify-center items-center px-2 w-fit h-8 gap-2 rounded-xl border-2 border-[#868e96] hover:bg-white/20 "
             >
-              <CgArrowTopRight size={20} />
+             Visit <CgArrowTopRight size={20} />
             </a>
           </div>
         </motion.div>
@@ -102,14 +136,14 @@ export const Projects = () => {
             online reservations.
           </p>
 
-          <div className="flex justify-between">
+          <div className="space-y-2">
             <p className=" text-[#868e96] ">#HTML #CSS #JS</p>
             <a
               href={"https://gourmet-oses.netlify.app/"}
               target="blank"
-              className=" flex justify-center items-center w-8 h-8 rounded-xl border-2 border-[#868e96] hover:bg-white/20 "
+              className=" flex justify-center items-center px-2 w-fit h-8 gap-2 rounded-xl border-2 border-[#868e96] hover:bg-white/20 "
             >
-              <CgArrowTopRight size={20} />
+             Visit <CgArrowTopRight size={20} />
             </a>
           </div>
         </motion.div>
@@ -134,14 +168,14 @@ export const Projects = () => {
             services, before-and-after gullaeries, and easy appointment booking.
           </p>
 
-          <div className="flex justify-between">
+          <div className="space-y-2">
             <p className=" text-[#868e96] ">#HTML #CSS #JS</p>
             <a
               href={"https://aevom-oses.netlify.app/"}
               target="blank"
-              className=" flex justify-center items-center w-8 h-8 rounded-xl border-2 border-[#868e96] hover:bg-white/20 "
+              className=" flex justify-center items-center px-2 w-fit h-8 gap-2 rounded-xl border-2 border-[#868e96] hover:bg-white/20 "
             >
-              <CgArrowTopRight size={20} />
+              Visit <CgArrowTopRight size={20} />
             </a>
           </div>
         </motion.div>
@@ -149,3 +183,4 @@ export const Projects = () => {
     </div>
   );
 };
+
